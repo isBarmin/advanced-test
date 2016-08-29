@@ -1,0 +1,34 @@
+.social {}
+
+  .social__list {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+  }
+
+    .social__item {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+      .social__btn {
+        display: block;
+        color: #fff;
+        font: 35px/1 FontAwesome;
+        text-decoration: none;
+        opacity: .7;
+        transition: opacity .25s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .social__btn--git:before   { content: '\f09b'; }
+      .social__btn--skype:before { content: '\f17e'; }
+      .social__btn--vk:before    { content: '\f189'; }

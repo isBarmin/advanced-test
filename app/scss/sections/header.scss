@@ -1,0 +1,26 @@
+.header {
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  background: $green;
+  color: $textLight;
+  font-size: 0;
+}
+
+  .header__in {
+    max-width: 1200px;
+    margin: auto;
+    padding: 14px 30px;
+  }
+
+    .header__part {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+      font-size: 1rem;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    .header__part--userblock {}
+    .header__social-wrap {}

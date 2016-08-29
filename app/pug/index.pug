@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge, chrome=1")
+
+    // Styles
+    <!-- build:css css/vendor.css -->
+      <!-- bower:css -->
+      <!-- endbower -->
+    <!-- endbuild -->
+
+    link(rel="stylesheet", href="css/main.css")
+
+    title test--advanced
+
+
+
+
+
+  body
+    .wrapper
+      header.header
+        .header__in
+          .header__part
+            .userblock
+              .userblock__photo
+                img.userblock__photo-in(src="img/content/me.jpg"  alt="Я")
+
+              .userblock__content
+                .userblock__name Быстров Борис Викторович
+                a.userblock__mail(href="tel:bystrov@gmail.com") bystrov@gmail.com
+
+          div(class="header__part  header__social-wrap")
+            .social
+                ul.social__list
+                  li.social__item
+                    a(class="social__btn  social__btn--git"  href="#404")
+                  li.social__item
+                    a(class="social__btn  social__btn--skype"  href="#404")
+                  li.social__item
+                    a(class="social__btn  social__btn--vk"  href="#404")
+
+
+
+
+      section(class="section  about")
+        div(class="container  section__in  about__in")
+          .section__head
+            h2.section__title О будущем ученике
+            .section__descr Ребятам из Loftschool будет полезно узнать немного обо мне
+
+          ul.about__list
+            li(class="about__item  about-item")
+              .about-item__side(style="background-image: url(img/decor/hello.svg);")
+              .about-item__main
+                .about-item__title Немного обо мне
+                div(class="about-item__text  content-editable")
+                  p.
+                    Я живу в Санкт-Петербурге (Россия). Мне 26 лет. Высшее образование - закончил НИУ ИТМО. Опыт в разработке 1 год. Уже окончил курсы в Академии Программирования, где не плохо научился верстать.
+                  p.
+                    Пока есть только один сайт, которым могу похвастаться:
+                    <a href="http://www.yandex.ru">www.yandex.ru</a>
+
+            li(class="about__item  about-item")
+              .about-item__side(style="background-image: url(img/decor/experience.svg);")
+              .about-item__main
+                .about-item__title Мой опыт в разработке
+                div(class="about-item__text  content-editable")
+                  p.
+                    В этом блоке я расскажу о себе, что я уже умею. Здесь я укажу другие курсы, которые до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру: html5, css3, sass, jade, git и пр
+
+
+
+
+      section(class="section  courses")
+        div(class="container  section__in  courses__in")
+          .section__head
+            h2.section__title Курсы на Loftblog
+            .section__descr которые мне помогут в выполнении этого задания
+
+          ul.courses__list
+            //- course-item
+            li.courses__item
+              .course-item
+                .course-item__pic(style="background-image: url(img/content/course-1.jpg);")
+
+                .course-item__main
+                  .course-item__content
+                    .course-item__title: a.course-item__title-link(href="#404") Основы JavaScript
+                    div(class="course-item__descr  content-editable")
+                      p.
+                        Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+                    .course-item__info
+                      i(class="course-item__info-icon  fa  fa-clock-o")
+                      span.course-item__text.
+                        24 урока (6 часов 46 минут)
+
+                  .course-item__foot
+                    label(class="checkbox  course-item__check")
+                      input.checkbox__input(type="checkbox")
+                      i.checkbox__fake
+                      span.checkbox__label Посмотрел
+
+            //- course-item
+            li.courses__item
+              .course-item
+                .course-item__pic(style="background-image: url(img/content/course-2.jpg);")
+
+                .course-item__main
+                  .course-item__content
+                    .course-item__title: a.course-item__title-link(href="#404") Основы jQuery
+                    div(class="course-item__descr  content-editable")
+                      p.
+                        Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+                    .course-item__info
+                      i(class="course-item__info-icon  fa  fa-clock-o")
+                      span.course-item__text.
+                        11 урока (2 часа 6 минут)
+
+                  .course-item__foot
+                    label(class="checkbox  course-item__check")
+                      input.checkbox__input(type="checkbox")
+                      i.checkbox__fake
+                      span.checkbox__label Посмотрел
+
+            //- course-item
+            li.courses__item
+              .course-item
+                .course-item__pic(style="background-image: url(img/content/course-3.jpg);")
+
+                .course-item__main
+                  .course-item__content
+                    .course-item__title: a.course-item__title-link(href="#404") Базовые элементы страницы
+                    div(class="course-item__descr  content-editable")
+                      p.
+                        Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
+                    .course-item__info
+                      i(class="course-item__info-icon  fa  fa-clock-o")
+                      span.course-item__text.
+                        9 урока (2 часа 7 минут)
+
+                  .course-item__foot
+                    label(class="checkbox  course-item__check")
+                      input.checkbox__input(type="checkbox")
+                      i.checkbox__fake
+                      span.checkbox__label Посмотрел
+
+            //- course-item
+            li.courses__item
+              .course-item
+                .course-item__pic(style="background-image: url(img/content/course-4.jpg);")
+
+                .course-item__main
+                  .course-item__content
+                    .course-item__title: a.course-item__title-link(href="#404") Создание адаптивных сайтов
+                    div(class="course-item__descr  content-editable")
+                      p.
+                        В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.
+                    .course-item__info
+                      i(class="course-item__info-icon  fa  fa-clock-o")
+                      span.course-item__text.
+                        7 уроков (2 часа 11 минут)
+
+                  .course-item__foot
+                    label(class="checkbox  course-item__check")
+                      input.checkbox__input(type="checkbox")
+                      i.checkbox__fake
+                      span.checkbox__label Посмотрел
+
+            //- course-item
+            li.courses__item
+              .course-item
+                .course-item__pic(style="background-image: url(img/content/course-5.jpg);")
+
+                .course-item__main
+                  .course-item__content
+                    .course-item__title: a.course-item__title-link(href="#404") Вёрстка адаптивной css галереи
+                    div(class="course-item__descr  content-editable")
+                      p.
+                        В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.
+                    .course-item__info
+                      i(class="course-item__info-icon  fa  fa-clock-o")
+                      span.course-item__text.
+                        6 урока (1 час 9 минут)
+
+                  .course-item__foot
+                    label(class="checkbox  course-item__check")
+                      input.checkbox__input(type="checkbox")
+                      i.checkbox__fake
+                      span.checkbox__label Посмотрел
+
+            //- course-item
+            li.courses__item
+              .course-item
+                .course-item__pic(style="background-image: url(img/content/course-6.jpg);")
+
+                .course-item__main
+                  .course-item__content
+                    .course-item__title: a.course-item__title-link(href="#404") Вёрстка адаптивной css галереи
+                    div(class="course-item__descr  content-editable")
+                      p.
+                        В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.
+                    .course-item__info
+                      i(class="course-item__info-icon  fa  fa-clock-o")
+                      span.course-item__text.
+                        4 урока (50 минут)
+
+                  .course-item__foot
+                    label(class="checkbox  course-item__check")
+                      input.checkbox__input(type="checkbox")
+                      i.checkbox__fake
+                      span.checkbox__label Посмотрел
+
+          .courses__message
+            i(class="courses__message-icon  fa  fa-check"  aria-hidden="true")
+            span.courses__message-text Задание выполнено
+
+
+
+
+    footer.footer
+      .container.footer__in
+        .footer__text
+          | А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера, не зависимо от количества контента на странице и размера окна.
+
+
+
+
+
+    // Scripts
+    <!-- build:js js/vendor.js -->
+      <!-- bower:js -->
+      <!-- endbower -->
+    <!-- endbuild -->
+
+    script(src="js/main.js")

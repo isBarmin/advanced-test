@@ -1,0 +1,14 @@
+.footer {
+  background: $black;
+  color: rgba($textLight, .5);
+}
+
+  .footer__in {
+    padding: 15px 0;
+  }
+
+    .footer__text {
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }

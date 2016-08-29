@@ -1,0 +1,167 @@
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+	background: #fff;
+	color: $textColor;
+	font: 300 14px/1.5 'Fira Sans', sans-serif;
+}
+
+body {
+	position: relative;
+	min-width: 1000px;
+}
+
+
+
+::selection {
+	background: #3D77EB;
+	color: rgba(255,255,255,.9);
+	text-shadow: 0 0 1px rgba(0,0,0,.25);
+}
+
+
+
+a {
+	color: $blue;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+
+::placeholder {
+	color: rgba(255,255,255,.9);
+}
+
+.input {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #D1D1D1;
+	border-radius: 4px;
+	outline: none;
+	transition: border-color .5s;
+
+	&:focus {
+		border-color: #3D77EB;
+	}
+}
+
+
+.checkbox {
+	display: inline-block;
+}
+	.checkbox__input {
+		display: none;
+	}
+	.checkbox__fake {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 19px;
+		width:  20px;
+		height: 20px;
+		border: 2px solid #B6B6B6;
+		border-radius: 2px;
+		background: #fff;
+		color: #fff;
+		font-style: normal;
+		text-align: center;
+		cursor: pointer;
+		transition:
+			color .25s,
+			border-color .25s,
+			background .25s;
+
+
+		&:before {
+			content: '\f00c';
+			position: absolute;
+			top: 0;  bottom: 0;
+			left: 0;  right: 0;
+			margin: auto;
+			font: 14px/16px FontAwesome;
+			opacity: 0;
+			transition: opacity .25s;
+		}
+
+
+		&:hover {
+			border-color: $green;
+		}
+
+		&:only-child {
+			margin-right: 0;
+		}
+	}
+
+	.checkbox__label {
+		position: relative;
+		top: 2px;
+		display: inline-block;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+
+.checkbox__input:checked + .checkbox__fake {
+	border-color: $green;
+	background: $green;
+
+	&:before {
+		opacity: 1;
+	}
+}
+
+
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -72px;
+	padding-bottom: 72px;
+	background: $gray  url(../img/bg/gplaypattern.png);
+}
+
+.container {
+	max-width: 940px;
+	margin: auto;
+}
+
+
+
+.section {}
+
+	.section__in {
+		padding: 40px 0 70px;
+
+		& > :first-child { margin-top: 0px; }
+		& > :last-child  { margin-bottom: 0px; }
+	}
+
+		.section__head {
+			margin-bottom: 35px;
+		}
+
+			.section__title {
+				margin-bottom: 15px;
+				color: $textDark;
+				font-size: 42px;
+				line-height: 1;
+				text-align: center;
+			}
+
+			.section__descr {
+				font-size: 21px;
+				line-height: 1.333;
+				font-weight: 300;
+				text-align: center;
+			}

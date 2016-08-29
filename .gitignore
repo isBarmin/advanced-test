@@ -1,0 +1,6 @@
+_materials/
+app/bower/
+bower_components/
+node_modules/
+dist/
+*.log

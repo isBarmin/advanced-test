@@ -1,5 +1,5 @@
 {
-  "name": "advanced_test",
+  "name": "advanced-test",
   "dependencies": {
     "normalize-css": "^4.2.0",
     "jquery": "^2"

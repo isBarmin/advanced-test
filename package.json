@@ -10,13 +10,11 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.0.3",
-    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-useref": "^3.1.0",
-    "gulp-watch": "^4.3.9",
-    "gulp-wiredep": "0.0.0",
-    "imagemin-pngquant": "^5.0.0"
+    "imagemin-pngquant": "^5.0.0",
+    "wiredep": "^4.0.0"
   },
   "bundleDependencies": [
     "passport.socketio"

@@ -7,6 +7,7 @@ $(document).ready(function() {
     $(document).on('click', '.course-item__check', function(e) {
       var check = $(this);
       var card  = check.closest('.course-item');
+      var item  = card.closest('.courses__item');
       var container;
 
 
@@ -22,9 +23,11 @@ $(document).ready(function() {
         card.fadeOut(function() {
           --coursesCnt;
 
+          item.hide(250);
+
           if( coursesCnt === 0 ) {
-            container  = card.closest('.courses');
-              container.addClass('courses--complete')
+            container = card.closest('.courses');
+            container.addClass('courses--complete');
           }
         });
       }, 1000);
